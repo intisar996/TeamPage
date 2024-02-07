@@ -1,0 +1,715 @@
+/*--------------------------------------------------------------------- 
+File Name: Teams.css 
+---------------------------------------------------------------------*/
+/*========================Start divider  ===============================*/
+
+.dividers {
+  margin-bottom: 10%;
+}
+.dividers2 {
+  margin-bottom: 12%;
+}
+.container-1 {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+@media (max-width: 822px) {
+  .container-1 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .dividers2 {
+    margin-bottom: 12px;
+  }
+}
+
+/*===========================Borders ============================= */
+
+.borders50 {
+  border-radius: 50%;
+}
+.borders15 {
+  border-radius: 15px;
+}
+
+/*   ========================Start Header=========================================  */
+.carousel {
+  padding: 8px 5px;
+}
+.carousel-inner {
+  height: 510px;
+}
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+}
+.carousel-inner .TeamHeader {
+  padding: 28px 0px;
+}
+.carousel-inner .TeamHeader .cardImage {
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: 2px solid #eeeeee;
+}
+.carousel-inner .TeamHeader .CardInfo {
+  height: 400px;
+  background-color: var(--FifthColor);
+  border-radius: 15px;
+  gap: 3%;
+}
+.carousel-inner .TeamHeader .CardInfo p {
+  color: #484848ee;
+  line-height: 29px;
+  text-align: center;
+}
+
+.carousel-inner .TeamHeader .CardInfo .TeamSideUp {
+  background: var(--primary);
+  width: 80%;
+  height: 7px;
+}
+.carousel-inner .TeamHeader .CardInfo .TeamSideDown {
+  background: var(--primary);
+  width: 75% !important;
+  height: 7px;
+}
+.carousel-inner .divideSide img {
+  width: 80px;
+  height: 80px;
+}
+.carousel-inner .cardHeader h1 {
+  font-size: 53px;
+}
+.carousel-inner .divideSide {
+  width: 75%;
+  gap: 2%;
+}
+
+@media (min-width:1022px) {
+  .col-lg-8 {
+    max-width: 64.666667% !important;
+  }
+}
+@media (min-width: 1024px) {
+.col-lg-3 { 
+    flex: 1 0 25% !important;
+    max-width: 34% !important;
+}
+}
+/*Social Media For Advertisement */
+.AdvSoical {
+  gap: 5%;
+  padding-inline-start: 0px;
+}
+.AdvSoical li a {
+  gap: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 0;
+  padding-left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: var(--white);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.AdvSoical li a i {
+  border-radius: 50%;
+  color: var(--white);
+  background-color: #395886a2;
+  position: static;
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+  line-height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 920px) {
+  .carousel-inner {
+    height: fit-content;
+    padding-bottom: 14%;
+  }
+  .carousel-inner .TeamHeader {
+    flex-direction: column-reverse;
+  }
+  .carousel-inner .cardHeader h1 {
+    font-size: 40px;
+    line-height: 57px;
+  }
+  .carousel-inner .TeamHeader .CardInfo {
+    height: fit-content;
+    padding: 6% 4px 10%;
+    margin-bottom: 9%;
+  }
+  .carousel-inner .TeamHeader .CardInfo p {
+    line-height: 34px;
+    text-align: center;
+    padding: 9px 20px;
+    font-size: 19px;
+  }
+}
+
+/*===============================UPComing Match======================================*/
+.UpComingMatch {
+  width: 100%;
+  height: 400px;
+}
+.UpComingMatch .ListMatches {
+  background-color: var(--primary);
+  height: 300px;
+}
+.UpComingMatch .ListMatches h4{
+  color:var(--white)
+}
+.UpComingMatch .AllMatch {
+  height: 350px;
+  margin-right: 20px;
+}
+.UpComingMatch .MatchList {
+  padding: 0px !important;
+  padding-inline-start: 0px;
+}
+
+.UpMatchCard {
+  height: 300px;
+  width: 98%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.UpMatchCard .UpMatchCard-Head {
+  padding: 10px;
+  background-color: var(--primary);
+  color: #fff;
+  gap: 20px;
+  border-radius: 20px 0px 20px 0px;
+  height: 20%;
+}
+
+.UpMatchCard .UpMatchCard-Head h3 {
+  word-spacing: 0.6rem;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.44rem;
+  gap: 5%;
+}
+.UpMatchCardHead-Date .Head-MatchDayNum {
+  font-weight: 600;
+  line-height: 3.2rem;
+  font-size: 3rem;
+  display: inline-block;
+  font-family: "Fugaz One", sans-serif;
+}
+.UpMatchCard .Head-MatchDayInfo {
+  text-transform: uppercase;
+  display: inline-block;
+  word-spacing: normal;
+}
+.UpMatchCard .UpMatchCard-Body .participations-Teams {
+  gap: 6%;
+}
+.UpMatchCard .MatchDateInfo-Day,
+.UpMatchCard .MatchDateInfo-Month {
+  font-weight: 400;
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+.UpMatchCard .UpMatchCard-Body .participationTime {
+  font-weight: 400;
+  line-height: 4.2rem;
+  font-size: 2.5rem;
+  display: inline-block;
+  font-family: "Fugaz One", sans-serif;
+  color: var(--primary);
+}
+.UpMatchCard .UpMatchCard-Body .participations-Teams img {
+  width: 70px;
+  height: 70px;
+}
+.UpMatchCard .UpMatchCard-Body .participations-TeamsName {
+  gap: 10%;
+}
+.UpMatchCard .UpMatchCard-Body .participations-TeamsName .participationvs {
+  font-weight: 400;
+  line-height: 1.2rem;
+  font-size: 2.5rem;
+  display: inline-block;
+  font-family: "Fugaz One", sans-serif;
+  color: var(--primary);
+}
+
+@media (max-width: 822px) {
+  .UpComingMatch .BoxMatch {
+    flex-direction:column-reverse;
+  }
+  .UpComingMatch .col-2 {
+    max-width: 45.666667%;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    inset: 0px 46% 0px 0px;
+  }
+  .UpComingMatch .arrowbtn {
+    display: block;
+    position: relative;
+    top: 19%;
+    padding: 0px 10px;
+    height: 10px;
+  }
+  .TeamsSearchBox select {
+    margin-bottom: 5px;
+  }
+  .UpMatchCard {
+    height: 300px;
+    width: 100%;
+    margin-right: -20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+}
+
+
+/*================================Card Teams===========================================*/
+.Teams {
+  height: fit-content;
+  width: 100%;
+}
+/*      Team Search       */
+.TeamsSearchBox select {
+  width: 196px;
+  display: inline;
+  border-radius: 6px;
+  text-align: right;
+  background-color: var(--SixthColor);
+}
+.Teams .cardTeams {
+  height: fit-content;
+  padding: 10px;
+  gap: 7%;
+  box-shadow: rgb(0 0 0 / 52%) 1.95px 1.95px 2.6px;
+  border: 2px solid var(--primary);
+  margin-right: 1%;
+  margin-bottom: 2%;
+  transition: 0.3s linear;
+}
+.Teams .cardTeams:hover {
+  border: 3px solid var(--primary);
+}
+
+.Teams .cardTeams .TeamName {
+  gap: 10px;
+  text-align: right;
+  justify-content: end;
+  width: 100%;
+  border-bottom: 1px solid var(--primary);
+}
+.Teams .cardTeams .TeamName h6 {
+  font-size: 18px;
+}
+.Teams .cardTeams .TeamName img {
+  width: 22%;
+}
+.Teams .cardTeams .TeamInfo {
+  gap: 18px;
+}
+.Teams .cardTeams .TeamInfo span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.Teams .cardTeams .TeamInfo .TeamInfoLocation {
+  gap: 9px;
+}
+.TeamMore {
+  position: relative;
+  padding: 2px;
+  font-size: 19px;
+  border: 2px solid #dcdcdc;
+  border-radius: 6px;
+  width: 100px;
+  text-align: center;
+  color: var(--primary) !important;
+}
+/*Social Media For Team */
+.cardTeams .SoicalTeam {
+  gap: 5%;
+  padding-inline-start: 0px;
+  margin: 0px;
+}
+.cardTeams .SoicalTeam li a {
+  border: 2px solid #dcdcdc;
+  gap: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 5px;
+  color: var(--white);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  transform: 0.3s ease-in-out;
+  -webkit-transform: 0.3s e;
+  -moz-transform: 0.3s e;
+  -ms-transform: 0.3s e;
+  -o-transform: 0.3s e;
+}
+.cardTeams .SoicalTeam li a:hover,
+.TeamMore:hover {
+  border: 2px solid var(--primary);
+}
+.cardTeams .SoicalTeam li a i {
+  border-radius: 50%;
+  color: var(--primary);
+  position: static;
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+  line-height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    max-width: 49%;
+  }
+}
+@media (max-width: 822px) {
+  .Teams {
+    padding: 33px;
+  }
+}
+@media (min-width: 900px) {
+  .Teams .col-lg-3 {
+    max-width: 32%;
+  }
+}
+@media (min-width: 576px) {
+.col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 49%;
+}
+}
+@media (min-width: 1280px){
+.col-lg-3 {
+    flex: 0 0 25% !important;
+    max-width: 24% !important;
+}
+}
+/*======================================================*/
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 32.333333%;
+  }
+}
+
+
+
+/*==================================About Team + LeadersWords========================================*/
+
+.AboutUs_Team {
+  width: 100%;
+  margin: 10px auto;
+}
+.AboutTeam {
+  width: 100%;
+  height: fit-content;
+  background: #f8f8f8;
+  border-radius: 20px;
+  padding: 10px 10px 7px;
+
+ & .AboutTeamText {
+  text-align: justify;
+  line-height: 46px;
+  font-size: clamp(15px,4vw,16px);
+  height: 100%;
+  width: 100%;
+  }
+
+  & .LeaderTeamText {
+      padding-top: max(10px, min(50px, 4vw));
+      font-size: clamp(15px,4vw,16px);
+
+      }
+  & span {
+    text-align: justify;
+  }
+ & .leaderPosition {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: clamp(15px,4vw,16px);
+  }
+  & .leaderImage img {
+    position: relative;
+    top: 12%;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    transform: scale(1.1,1.3);
+}
+& .outer {
+  overflow: hidden;
+  position: relative;
+  padding-top: 24px;
+  height: 350px;
+}
+& .leaderImage {
+  width: 300px;
+  height: 300px;
+  background-color: var(--primary);
+  border: 3px solid var(--secondary);
+}
+}
+
+
+@media (max-width: 822px) {
+  .AboutTeam {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+/*============================Team Member=======================================*/
+.TeamMember {
+
+& .TeamMemberBox {
+  width: 100%;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 10px 10px 7px;
+  gap:10px;
+
+}
+
+  & .TeamMemberCard {
+    background: rgb(138,174,224);
+    height: 200px;
+    background-image: linear-gradient(230deg,rgba(54,88,134,.9),rgba(138,174,244,.9));
+  gap:15px;
+
+  & h3 {
+    font-size: clamp(10px,4vw,18px);
+    color:var(--dark);
+
+  }
+  }
+  
+
+  & a {
+    color: var(--dark);
+
+    &:hover {
+      color: var(--primary);
+
+    }
+  }
+
+}
+
+/*================================================================*/
+
+
+/*team section */
+.Honoraryboard {
+    text-align: center;
+    padding: 0px 0%;
+
+ & .HonoraryCard {
+  position: relative;
+
+
+  & .HonoraryImage {
+    background-color: var(--primary);
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    position: relative;
+    top: 62px;
+
+    & img {
+      position: absolute;
+      top: -30px;
+      transform: scale(1);
+}
+  }
+  & .HonoraryInfo {
+    background-color: var(--FifthColor);
+    width: 300px;
+    height: 70px;
+    border-radius: 6px;
+    z-index: 999;
+
+    & h4 {
+      font-size: clamp(15px,4vw,19px);
+    }
+    & h5 {
+      font-size: clamp(10px,4vw,15px);
+    }
+  }
+
+ }
+
+
+
+}
+
+ 
+/*team section end*/
+
+
+
+
+/*=========================Players============================*/
+/*team section */
+.Honoraryboard {
+  text-align: center;
+  padding: 0px 0%;
+
+& .HonoraryCard {
+position: relative;
+
+
+& .HonoraryImage {
+  background-color: var(--primary);
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  position: relative;
+  top: 62px;
+
+  & img {
+    position: absolute;
+    top: -30px;
+    transform: scale(1);
+}
+}
+& .HonoraryInfo {
+  background-color: var(--FifthColor);
+  width: 300px;
+  height: 70px;
+  border-radius: 6px;
+  z-index: 999;
+
+  & h4 {
+    font-size: clamp(15px,4vw,19px);
+  }
+  & h5 {
+    font-size: clamp(10px,4vw,15px);
+  }
+}
+
+}
+
+
+
+}
+
+
+/*team section end*/
+
+
+/*========================Start  Footer ===============================*/
+
+.footer a {
+  color:var(--white);
+  }
+  .footer ul {
+    gap:10px;
+    padding: 0px;
+  }
+  .socialMedia li {
+    border: 3px solid var(--secondary);
+    width: 21%;
+    padding: 4px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3 linear;
+    -webkit-transition: 0.3 linear;
+    -moz-transition: 0.3 linear;
+    -ms-transition: 0.3 linear;
+    -o-transition: 0.3 linear;
+    background-color: var(--primary);
+  }
+  .socialMedia li:hover {
+    background-color: var(--secondary);
+  }
+  .footer .cp-text{ 
+    color: var(--white);
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  }
+  .footer .footerleft {
+    gap: 15px;
+  } 
+  /*========================End  Footer ===============================*/
+
+
+
+
+
+
+
+
+
+
+
+  /* ! ***********************************Delete this ********************************/
+
+
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    position: sticky;
+    margin: 0;
+}
+
+.marquee {
+    position: sticky; /* or use position: fixed; */
+    /*   overflow: hidden; */
+}
+
+.marquee-content {
+    position: sticky; /* or use position: fixed; */
+    display: flex;
+    animation: scrolling 10s linear infinite;
+}
+
+.marquee-item {
+    position: sticky; /* or use position: fixed; */
+    flex: 0 0 16vw;
+    margin: 0 1vw;
+    /*   flex: 0 0 20vw; */
+    /*   margin: 0 2vw; */
+}
+
+    .marquee-item img {
+        position: sticky; /* or use position: fixed; */
+        display: block;
+        width: 50%;
+        /*   padding: 0 20px; */
+    }
+
+@keyframes scrolling {
+
+    0% {
+        position: sticky; /* or use position: fixed; */
+        transform: translateX(0);
+    }
+
+    100% {
+        position: sticky; /* or use position: fixed; */
+        transform: translatex(144vw);
+    }
+}

@@ -1,0 +1,624 @@
+/*--------------------------------------------------------------------- 
+import Fonts 
+---------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+:root {
+    --primary: #395886;
+    --secondary: #628ecb;
+    --thirdColor: #8AAEE0 
+    --fourthColor:#B1C9EF;
+    --FifthColor: #D5DEEF;
+    --SixthColor: #F0F3FA;
+    --white: #fff;
+    --light: #f1f3ff;
+    --dark: #000000;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+/*--------------------------------------------------------------------- 
+basic 
+---------------------------------------------------------------------*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* For the whole page */
+body::-webkit-scrollbar {
+    width: 25px;
+}
+
+body::-webkit-scrollbar-track:vertical {
+    background: var(--primary);
+}
+
+body::-webkit-scrollbar-thumb:vertical {
+    background-image: url(../img/foot1.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-right: 100px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('GE SS Two Bold.woff');
+}
+
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+div, h1 {
+    font-family: myFirstFont;
+}
+
+body {
+    color: var(--dark);
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.80857;
+    font-weight: normal;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: var(--light);
+    scroll-behavior: smooth;
+    cursor: url(../img/pointer.png), zoom-out;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0px;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+ul {
+    list-style: none;
+}
+/*========================Start Btn Style===============================*/
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+    .btn-outline-primary:hover {
+        background-color: var(--primary);
+        border-color: var(--primary);
+    }
+
+.bg-secondary {
+    background-color: var(--primary) !important;
+}
+/*========================End Btn Style===============================*/
+/*===========================Borders ============================= */
+
+.borders50 {
+    border-radius: 50%;
+}
+
+.borders15 {
+    border-radius: 15px;
+}
+
+/*========================Start cursor Style===============================*/
+.cursor {
+    cursor: pointer;
+}
+
+/*.cursorFootball {
+    cursor: url(../img/pointer.png), zoom-out;
+}
+*/
+.cursorZoom {
+    cursor: zoom-out;
+}
+/*========================End cursor Style===============================*/
+/*===============================Start Border====================================*/
+.border-radius50 {
+    border-radius: 50%;
+}
+
+.border-radius20 {
+    border-radius: 20px;
+}
+.border-radius10 {
+    border-radius: 10px;
+}
+/*===============================End Border====================================*/
+
+/*=================================Container===========================================*/
+.container-1 {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+@media (max-width: 822px) {
+    .container-1 {
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+    }
+}
+/*========================Start Social Media ===============================*/
+
+.side-one {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 99;
+    width: 10px;
+}
+
+    .side-one li {
+        position: relative;
+        height: 51px;
+        width: 200px;
+        margin-bottom: 10px;
+        background: #628ecb78;
+        left: 54px;
+        list-style: none;
+        color: var(--dark);
+        border-radius: 0 30px 30px 0;
+        padding: 10px 2px;
+    }
+
+        .side-one li a {
+            gap: 10px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding-right: 0;
+            padding-left: 0;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            color: var(--white);
+            text-shadow: 1px 1px 1px rgba(0,0,0,.15);
+        }
+
+            .side-one li a i {
+                border-radius: 50%;
+                color: var(--white);
+                background-color: #395886a2;
+                position: static;
+                width: 45px;
+                height: 45px;
+                font-size: 30px;
+                line-height: 50px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center
+            }
+
+    .side-one img {
+        font-size: 17px;
+        position: static;
+        float: right;
+        width: 50px;
+        height: 44px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .side-one li a span {
+        position: relative;
+        float: left
+    }
+
+    .side-one li:hover {
+        left: 155px;
+    }
+
+.social-list li {
+    float: left;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin: 0 5px 5px 0;
+}
+
+    .social-list li a {
+        font-size: 40px;
+        color: var(--white);
+        position: static;
+        width: 40px;
+        height: 40px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+        .social-list li a:before, .social-list li a:after {
+            font-size: 16px;
+            text-align: center;
+            display: block
+        }
+
+        .social-list li a:before, .social-list li a:after {
+            -webkit-transition: -webkit-top 0.4s;
+            -moz-transition: top 0.4s;
+            -o-transition: top 0.4s;
+            transition: top 0.4s;
+        }
+
+        .social-list li a:hover:before {
+            top: -100%;
+        }
+
+        .social-list li a:hover:after {
+            top: 0;
+        }
+
+        .social-list li a:before {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .social-list li a:after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+            z-index: 9999;
+            top: 100%;
+            display: block;
+        }
+
+    .social-list li a, .side-one li, .icon-links a:before {
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+
+.sideLeft .no-mobile {
+    display: none;
+}
+
+@media (max-width:920px) {
+    .SocialShow {
+        display: none;
+    }
+}
+
+@media (max-width:1000px) {
+    .sideLeft .no-mobile {
+        display: block !important;
+        top: 20%;
+    }
+     .side-one li {
+        left: 45px;
+    }
+}
+
+/*========================End Social Media ===============================*/
+
+/*========================Start Back to Top ===============================*/
+.back-to-top {
+    position: fixed;
+    display: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 1;
+    font-size: 30px;
+    right: 30px;
+    bottom: 30px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+
+    .back-to-top i {
+        color: #2A4B7C;
+    }
+
+        .back-to-top i:hover {
+            color: #202C45;
+        }
+
+.back-to-top {
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+/*========================End Back to Top ===============================*/
+
+
+/*======================Start Navbar==========================*/
+.mainNavbar {
+    position: relative;
+    width: 100%;
+    height: 62px;
+    z-index: 9999;
+}
+
+.navbar {
+    z-index: 999;
+    position: relative;
+    width: 100%;
+}
+
+.mainNavbar.mainNavbarScrollingActive {
+    position: fixed;
+    top: 0;
+    width: fit-content;
+}
+
+.navbar-nav {
+    padding-right: 0px;
+}
+
+.MobileLogo {
+    display: none;
+}
+
+.navbar-nav a {
+    font-size: 20px;
+    position: relative;
+    border-radius: 10px;
+    border-bottom: 2px solid transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .navbar-nav a {
+        font-size: 15px;
+    }
+}
+
+.navbar-nav a.active {
+    border-bottom: 2px solid var(--primary);
+}
+@media (max-width: 920px) {
+    .navbar {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        gap: 20px;
+        text-align: right;
+    }
+    .MobileLogo {
+        display: block;
+    }
+
+    .LogoView {
+        display: none;
+    }
+}
+
+@media (max-width: 820px) {
+
+    .mainNavbar.mainNavbarScrollingActive {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+}
+
+/*   ========================Start Header=========================================  */
+.carousel {
+    padding: 8px 5px;
+}
+
+.carousel-inner {
+    height: 510px;
+}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary);
+}
+
+.carousel-inner .TeamHeader {
+    padding: 28px 0px;
+}
+
+    .carousel-inner .TeamHeader .cardImage {
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border: 2px solid #eeeeee;
+    }
+
+    .carousel-inner .TeamHeader .CardInfo {
+        height: 400px;
+        background-color: var(--FifthColor);
+        border-radius: 15px;
+        gap: 3%;
+    }
+
+        .carousel-inner .TeamHeader .CardInfo p {
+            color: #484848ee;
+            line-height: 29px;
+            text-align: center;
+        }
+
+        .carousel-inner .TeamHeader .CardInfo .TeamSideUp {
+            background: var(--primary);
+            width: 80%;
+            height: 7px;
+        }
+
+        .carousel-inner .TeamHeader .CardInfo .TeamSideDown {
+            background: var(--primary);
+            width: 75% !important;
+            height: 7px;
+        }
+
+.carousel-inner .divideSide img {
+    width: 80px;
+    height: 80px;
+}
+
+.carousel-inner .cardHeader h1 {
+    font-size: 53px;
+}
+
+.carousel-inner .divideSide {
+    width: 75%;
+    gap: 2%;
+}
+@media (min-width: 1024px) {
+    .col-lg-3 {
+        flex: 1 0 25% !important;
+        max-width: 34% !important;
+    }
+}
+/*Social Media For Advertisement */
+.AdvSoical {
+    gap: 5%;
+    padding-inline-start: 0px;
+}
+
+    .AdvSoical li a {
+        gap: 10px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 0;
+        padding-left: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: var(--white);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    }
+
+        .AdvSoical li a i {
+            border-radius: 50%;
+            color: var(--white);
+            background-color: #395886a2;
+            position: static;
+            width: 40px;
+            height: 40px;
+            font-size: 26px;
+            line-height: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+@media (max-width: 920px) {
+    .carousel-inner {
+        height: fit-content;
+        padding-bottom: 14%;
+    }
+
+        .carousel-inner .TeamHeader {
+            flex-direction: column-reverse;
+        }
+
+        .carousel-inner .cardHeader h1 {
+            font-size: 40px;
+            line-height: 57px;
+        }
+
+        .carousel-inner .TeamHeader .CardInfo {
+            height: fit-content;
+            padding: 6% 4px 10%;
+            margin-bottom: 9%;
+        }
+
+            .carousel-inner .TeamHeader .CardInfo p {
+                line-height: 34px;
+                text-align: center;
+                padding: 9px 20px;
+                font-size: 19px;
+            }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
